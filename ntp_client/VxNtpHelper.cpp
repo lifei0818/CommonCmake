@@ -876,12 +876,12 @@ x_int32_t ntp_get_time(x_cstring_t xszt_host, x_uint16_t xut_port, x_uint32_t xu
             // T = T4 + ((T2 - T1) + (T3 - T4)) / 2;
             *xut_timev = xit_tmlst[3] + ((xit_tmlst[1] - xit_tmlst[0]) + (xit_tmlst[2] - xit_tmlst[3])) / 2;
 
-            /*BV_OUTPUT("time1", xit_tmlst[0]);
+            BV_OUTPUT("time1", xit_tmlst[0]);
             BV_OUTPUT("time2", xit_tmlst[1]);
             BV_OUTPUT("time3", xit_tmlst[2]);
             BV_OUTPUT("time4", xit_tmlst[3]);
             BV_OUTPUT("timev", *xut_timev);
-            BV_OUTPUT("timec", ntp_gettimevalue());*/
+            BV_OUTPUT("timec", ntp_gettimevalue());
 
             break;
         }
